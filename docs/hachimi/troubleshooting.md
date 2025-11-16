@@ -13,11 +13,14 @@
 ### Physics (hair, clothing, etc.) are stiff when running at 60+ FPS
 Change the "Physics update mode" setting to "Mode60FPS". This setting is available in the Config Editor in the "Gameplay" tab.
 
-### Corrupted images/sprites
-Update your translations. Your source might be out of date, ask its maintainers.  
-If it's close to a game update, it's likely they will be working on it. Please check if they're already aware before bothering them. 
+### Corrupted textures or text 
 
-If this doesn't help, you might still be using an old source. Open the Menu and run the `First Time Setup` again.
+If you are playing the **Global** version and accidentally installed translations **not specicially made for Global**, you will see corrupted text and images.  
+To fix this, open the Hachimi overlay with the `Right Arrow` key, go to the `Config Editor` and enable `Disable translations`, then restart the game.
+
+If you are playing the **JP** version, update your translations. Your source might be out of date, ask its maintainers.
+If this doesn't help, you might still be using an old source. Open the Menu and run the `First Time Setup` again.  
+<small>If it's close to a game update, it's likely source maintainers will be working on it. Please check if they're already aware before bothering them.</small>
 
 ### Something isn't translated
 Translations are provided by volunteers in the community offering up their time. Many things are not yet done. Check in with your chosen translation source and try to support its translators.
@@ -72,11 +75,6 @@ Some kernel-level anti-cheats (such as Vanguard, used in Valorant and League of 
 
 ### Installer: "Code execution cannot proceed / VCRUNTIME" error
 Install the latest [VC++ redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170) matching your device architecture. If you're unsure, it's 99% likely to be `x64`.
-
-### Steam Global: Corrupted text and images
-
-If you accidentally installed translations on the Global version, you will see corrupted text and images.  
-To fix it, open the Hachimi overlay with the `Right Arrow` key, go to the `Config Editor` and enable `Disable translations`, then restart the game.
 
 ### Steam Global and JP: Issues with GUI/overlay
 
