@@ -12,7 +12,7 @@ Use at your own risk, and please share names and links in a responsible manner, 
 :::
 
 ::: warning
-Existing Hachimi user? You will need to change to Hachimi Edge due to a big game update on 2025/09/24.
+Existing Hachimi user? You will need to change to Hachimi Edge due to a big game update on 2025/09/24 (JP) and 2025/11/11 (Global).
 :::
 
 ## Compatibility

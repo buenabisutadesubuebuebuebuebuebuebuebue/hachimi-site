@@ -3,6 +3,10 @@
 Follow the guide for your platform below, then continue with [First Time Setup](#first-time-setup).
 
 ## Windows
+::: danger
+Playing on Global after 2025/11/11? Follow the [Japanese guide](getting-started-jp.md) instead, pointing the installer at the global install location, and skipping the first time setup!  
+Only follow this section if your game version hasn't updated yet.
+:::
 
 1. Download the latest `hachimi_installer.exe` from the [Releases page](https://github.com/Hachimi-Hachimi/Hachimi-Unity2020/releases). 
 1. Run it and click on Install. No need to modify any of the options if you don't know what they mean.
@@ -22,6 +26,10 @@ Only add the **file** extensions (`.exe`, `.dll`) when you rename if you see the
 
 ::: warning
 Hachimi cannot be used with these versions without root.
+:::
+
+::: danger
+Since 2025/11/11, the Hachimi version linked below will likely fail. Use the file from the [latest Edge release](https://github.com/kairusds/Hachimi-Edge/releases/latest) instead. Support state is currently uncertain.
 :::
 
 #### Zygisk
