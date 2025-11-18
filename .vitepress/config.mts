@@ -12,6 +12,7 @@ const defineSupportLocales = [
   'id',
   'ja'
 ];
+const host = 'https://hachimi.noccu.art'
 
 const commonSidebarConfig: VitePressSidebarOptions = {
   collapsed: false,
@@ -57,7 +58,8 @@ const vitePressConfig: UserConfig = {
   title: "Hachimi",
   description: "Game translation and enhancement mod for Umamusume. Maintained fork of Hachimi, with updates and improvements.",
   head: [
-    ['link', { rel: "shortcut icon", href: "/favicon.ico"}]
+    ['link', { rel: "shortcut icon", href: "/favicon.ico"}],
+    ["meta", { name: "keywords", content: "umamusume, hachimi, translation, game mod, patch"}]
   ],
   themeConfig: {
     logo: "/assets/logo.png",
@@ -146,10 +148,23 @@ const vitePressConfig: UserConfig = {
       }
     }
   },
+  cleanUrls: true,
+  // Use over transformHead as this ignores implicitly generated pages and shows in dev.
+  transformPageData(pageData, ctx) {
+    const head: Array<any> = pageData.frontmatter.head ??= []
+    ctx.siteConfig.sitemap?.hostname
+    head.push(["link", { rel: "canonical", href: createCanonical(pageData.relativePath) }])
+  },
   sitemap: {
-    hostname: "https://hachimi.noccu.art"
+    hostname: host
   }
-};
+}
+
+function createCanonical(rel_path: string) {
+  // This follows GH Pages standards.
+  const stripped = rel_path.substring(0, rel_path.lastIndexOf("."))
+  return `${host}${stripped == "index" ? "" : "/"}${stripped.replace("index", "")}`
+}
 
 export default defineConfig(
   withSidebar(vitePressConfig, vitePressSidebarConfig)
