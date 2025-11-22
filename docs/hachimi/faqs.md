@@ -56,3 +56,9 @@ You don't have to import the key again. When updating Hachimi, you can just rein
 1. Uninstall UmaPatcher.
 1. Download & install the latest UmaPatcher.
 1. Settings -> Import signing key.
+
+## I turned off Hachimi GUI/Overlay, how do I turn it back on?
+First of all, you likely did this as a workaround on Android. The issue has been fixed since v0.15.1, so check that you have updated to the latest Hachimi Edge.  
+
+Open Hachimi's config file (config.json) in a text editor and change the `disable_gui` value from `true` to `false`, then restart the game. This config file is located in the `hachimi` folder inside the game's installation folder. On android that is `android/media/jp.co.cygames.umamusume` (might differ with phone brand)  
+If you're uncomfortable with this or run into issues, it's safe to delete the config file as well. Hachimi will recreate a default one.
