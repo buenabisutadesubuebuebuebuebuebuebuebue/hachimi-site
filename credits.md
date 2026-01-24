@@ -27,7 +27,7 @@
 - [Full credits & Progress](https://github.com/UmaTL/hachimi-tl-en/wiki/Translation-Progress)
 
 Alternate versions:
-- [English with skill data swap](https://github.com/UmaTL/hachimi-tl-en-sd)
+- [English with skill data](https://github.com/UmaTL/hachimi-tl-en-sd)
 - [Skill data only](https://github.com/UmaTL/hachimi-sd)
 
 ## [Simplified Chinese translations](https://github.com/Hachimi-Hachimi/tl-zh-cn/)
@@ -49,4 +49,11 @@ Alternate versions:
 - Contributors:
 <a href="https://github.com/Xmatography/umachimi-id/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=Xmatography/umachimi-id" />
+</a>
+
+## [French translations (Global)](https://umamusumefr.github.io)
+- Maintainer: UmamusumeFR (?)
+- Contributors:
+<a href="https://github.com/UmamusumeFR/hachimi-tl-fr/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=UmamusumeFR/hachimi-tl-fr" />
 </a>
